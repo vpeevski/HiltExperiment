@@ -1,4 +1,4 @@
-package com.discoverita.hiltexperiment;
+package com.discoverita.hiltexperiment.service.own;
 
 import dagger.Binds;
 import dagger.Module;
@@ -7,9 +7,9 @@ import dagger.hilt.android.components.ActivityComponent;
 
 @Module
 @InstallIn(ActivityComponent.class)
-public abstract class ServiceProviderModule {
+public abstract class OwnServiceProviderModule {
 
     @Binds
-    abstract ServiceInterface bindService(ServiceImpl service);
+    abstract OwnServiceInterface bindService(OwnServiceImpl service);
 
 }
